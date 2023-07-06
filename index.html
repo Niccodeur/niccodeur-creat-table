@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Création d'un tableau</title>
+    <link href="../css/style.css.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">   
+</head>
+<body>
+    <header>
+        <h1 class="h1-header">Création d'un tableau en HTML et CSS</h1>
+    </header>
+        <nav>
+            
+        </nav>
+            <main>
+                
+                <section class="section-présentation">
+                    <h2>.Apprendre à créé un tableau en HTML et CSS.</h2>               
+                        <p> Pour commencer, nous allons utilisé la balise en paire 
+                            <span class="encadrement-balise">&lt;table&gt;  &lt;/table&gt;</span>
+                            qui indique le début et la fin du tableau.<br>
+                            Cette balise est de type <span class="encadrement-balise">block</span>,
+                            on va donc la placer en dehors d'un paragraphe ou d'une 
+                            <span class="encadrement-balise">div</span>.
+                        
+                             On associe ces balises avec la valeur 
+                            <span class="encadrement-balise">&lt;tr&gt;  &lt;/tr&gt;</span>
+                            et <span class="encadrement-balise">&lt;td&gt;  &lt;/td&gt;</span>. 
+                        </p>
+                </section>
+                
+                <section class="section-rendu-web">
+                        <p> Pour construire un tableau ligne par ligne,                           
+                            on indique pour chaque ligne, <span class="encadrement-balise">&lt;tr&gt;</span> 
+                            (pour table row ou "rangée du tableau")<br>        
+                            et le contenu des différentes cellules, <span class="encadrement-balise">&lt;td&gt</span> 
+                            (pour table data ou "donnée" ou "entrée"):
+                    
+                        <ul>
+                            <li>
+                            <span class="encadrement-balise-couleur1">&lt;tr&gt;  &lt;/tr&gt;</span> 
+                            indique le début et la fin d' <span class="mise-en-gras">une ligne du tableau</span>.
+                            </li>
+                            <li>
+                            <span class="encadrement-balise-couleur2">&lt;td&gt;  &lt;/td&gt;</span> 
+                            indique le début et la fin du contenu d'
+                            <span class="mise-en-gras">une cellule</span>.
+                            </li>
+                        </ul>
+                       
+                            <table class="table-partie1-et-12" >
+                                <caption>Tableau de sport</caption>
+                                <tr>
+                                    <th>Jour</th>
+                                    <th>Exercice</th>
+                                    <th>Temp</th>
+                                </tr>
+                                <tr>
+                                <td class="td-modification2">lundi</td>
+                                <td class="td-modification3">abdo</td>
+                                <td class="td-modification2">20min x2</td>
+                                </tr>
+                                <tr class="tr-modification1">
+                                <td class="td-modification2">mardi</td>
+                                <td class="td-modification2">gainage</td>
+                                <td class="td-modification2">30min x2</td>
+                                </tr>
+                                <tr>
+                                    <td class="td-modification2">mercredi</td>
+                                    <td class="td-modification2">pompes</td>
+                                    <td class="td-modification2">20min x2</td>
+                                </tr>
+                            </table>
+                        
+                        <p>     
+                            Je vais vous détaillez les étapes pour créé le tableau si dessus.<br>                          
+                        </p>
+                </section>
+                 
+                <section class="section-exemple">
+                    <p>
+                        <span class="numérotation"> 1.</span>                    
+                        Pour commencer, dans la partie HTML, nous allons inseré la balise en paire 
+                        <span class="encadrement-balise">&lt;table&gt;  &lt;/table&gt;</span>.<br>
+                        <span class="exemple"> Exemple en image:</span>                     
+                    </p>
+                    <img src="./images_html/img_html_partie1.PNG">
+                </section>
+
+                <section class="section-exemple">
+                    <p> 
+                        <span class="numérotation">2.</span>
+                        Puis on ajoute la balise en paire <span class="encadrement-balise">&lt;tr&gt;  &lt;/tr&gt;</span>
+                        pour créé une ligne a notre tableau.<br>
+                        <span class="exemple"> Exemple en image:</span>
+                        <img src="./images_html/img_html_partie2.PNG">                     
+                    </p>
+                </section>
+                
+                <section class="section-exemple">
+                    <p>
+                        <span class="numérotation">3.</span>
+                        Et on indique le nombre de colonne avec la balise en paire 
+                        <span class="encadrement-balise">&lt;td&gt;  &lt;/td&gt;</span>.<br>
+                        On veut que notre tableau est 3 colones, donc on ajoute 3 fois la balise en paire
+                        <span class="encadrement-balise">&lt;td&gt;  &lt;/td&gt;</span>
+                        et on leur donne un contenue.<br>
+                        <span class="exemple"> Exemple en image:</span>
+                        <img src="./images_html/img_html_partie3.PNG">
+                    </p>
+                </section>    
+                    
+                <section class="section-rendu-web">
+                    <p>
+                        <span class="exemple"> Rendu Web:</span>
+                        <table>
+                            <tr>
+                                <td>lundi</td>
+                                <td>abdos</td>
+                                <td>20min x2</td>
+                            </tr>
+                        </table> 
+                    </p>
+                </section>                   
+          
+                <section class="section-exemple">
+                    <p> 
+                        <span class="numérotation">4.</span>
+                        Je sais, ça ne resemble pas vraiment a un tableau. Pour lui donner bonne allure
+                        on va utilisé le CSS.<br>
+                        <span class="exemple"> Exemple en image:</span>
+                        <img src="../css/images_css/img_css_partie4.PNG">
+                    </p>
+                </section>
+
+                <section class="section-rendu-web">
+                    <p>
+                        <span class="exemple"> Rendu Web:</span>
+                         
+                        <table>
+                            <tr>
+                                <td class="td-modification1">lundi</td>
+                                <td class="td-modification1">abdos</td>
+                                <td class="td-modification1">20min x2</td>
+                            </tr>
+                        </table>                   
+                    </p>
+                </section>
+
+                <section class="section-exemple">
+                    <p> 
+                        <span class="numérotation">5.</span>
+                        C'est mieux, mais il y a un espace entre les colonnes.<br>
+                        Pour collé les colones entre elle, on va utilisé la propriété 
+                        <span class="encadrement-balise">border-collaspe:</span>.<br>
+                        <span class="exemple"> Exemple en image:</span>
+                        <img src="../css/images_css/img_css_partie5.PNG">
+                    </p>
+                </section>
+
+                <section class="section-rendu-web">
+                    <p>
+                        <span class="exemple">Rendu Web:</span>
+                        
+                        <table class="table-partie5">
+                            <tr>
+                                <td class="td-modification1">lundi</td>
+                                <td class="td-modification1">abdos</td>
+                                <td class="td-modification1">20min x2</td>
+                            </tr>
+                        </table> 
+                    </p>
+                </section>
+                 
+                <section class="section-exemple">
+                    <p> 
+                        <span class="numérotation">6.</span>
+                        Sa commence a resemble beaucoup plus a un tableau comme ça.<br>
+                        Mais notre tableau doit avoir 3 lignes de 3 colones.<br>
+                        Pour les rajoutés on a juste a répètte l'opération.<br>
+                        <span class="exemple"> Exemple en image:</span>
+                        <img src="./images_html/img_html_partie6.PNG">
+                    </p>
+                </section>
+
+                <section class="section-rendu-web">
+                    <p>
+                        <span class="exemple"> Rendu Web:</span>
+                        
+                        <table class="table-partie6" >                      
+                            <tr>
+                                <td class="td-modification1">lundi</td>
+                                <td class="td-modification1">abdos</td>
+                                <td class="td-modification1">20min x2</td>
+                            </tr>
+                            <tr>
+                                <td class="td-modification1">mardi</td>
+                                <td class="td-modification1">gainage</td>
+                                <td class="td-modification1">30min x2</td>
+                            </tr>
+                            <tr>
+                                <td class="td-modification1">mercredi</td>
+                                <td class="td-modification1">pompes</td>
+                                <td class="td-modification1">30min x2</td>
+                            </tr>
+                        </table>
+                        Trés bien, mais c'est trop sérré. On va donné de l'espace pour que ça respire un peu.<br>
+                    </p>
+                </section>
+                
+                <section class="section-exemple">
+                    <p> 
+                        <span class="numérotation">7.</span>
+                        On va juste rajoutés la propriété padding: et width: dans l'attribut <span class="encadrement-balise">&lt;td&gt;</span><br>
+                    
+                        <span class="exemple">Exemple:</span>
+                        <img src="../css/images_css/img_css_partie7.PNG">
+                    </p>
+                </section>
+
+                <section class="section-rendu-web">
+                    <p>
+                        <span class="exemple">Rendu Web</span><br>
+                        
+                        <table class="table-partie7" >
+                           
+                            <tr>
+                                <td class="td-modification2">lundi</td>
+                                <td class="td-modification2">abdos</td>
+                                <td class="td-modification2">20min x2</td>
+                            </tr>
+                            <tr>
+                                <td class="td-modification2">mardi</td>
+                                <td class="td-modification2">gainage</td>
+                                <td class="td-modification2">30min x2</td>
+                            </tr>
+                            <tr>
+                                <td class="td-modification2">mercredi</td>
+                                <td class="td-modification2">pompes</td>
+                                <td class="td-modification2">30min x2</td>
+                            </tr>
+                        </table>
+                        Super! Mais il nous manque une ligne pour différensier chaque colones.
+                    </p>                   
+                </section>
+
+                <section class="section-exemple">
+                    <p>
+                        <span class="numérotation">8.</span>
+                        La façon de faire, reste la même que précédemment, la seule différence ces que l'on 
+                        remplace la balise &lt;td&gt; par la balise &lt;th&gt;.<br>
+
+                        <span class="exemple">Exemple en image:</span>
+                        <img src="./images_html/img_html_partie8.PNG">
+                    </p>
+                </section>
+
+                <section class="section-rendu-web">
+                    <p>
+                        <span class="exemple">Rendu Web:</span>
+                        
+                        <table class="table-partie8" >
+                            <tr>
+                                <th>Jour</th>
+                                <th>Exercise</th>
+                                <th>Temps</th>
+                            </tr>
+                            <tr>
+                                <td class="td-modification2">lundi</td>
+                                <td class="td-modification2">abdos</td>
+                                <td class="td-modification2">20min x2</td>
+                            </tr>
+                            <tr>
+                                <td class="td-modification2">mardi</td>
+                                <td class="td-modification2">gainage</td>
+                                <td class="td-modification2">30min x2</td>
+                            </tr>
+                            <tr>
+                                <td class="td-modification2">mercredi</td>
+                                <td class="td-modification2">pompes</td>
+                                <td class="td-modification2">30min x2</td>
+                            </tr>
+                        </table>
+                        Par défault les titres sont en gras.<br>
+                        Bon il nous reste un dernier point a voir.
+                    </p>
+                </section>
+
+                <section class="section-exemple">
+                    <p>
+                        <span class="numérotation">9.</span>
+                        Un titre, il manque un titre a notre tableau.<br>
+                        Pour créé un titre, on va utilisé la balise en pair &lt;caption&gt;.<br>
+
+                        <span class="exemple">Exemple en image:</span>
+                        <img src="./images_html/img_html_partie9.PNG">
+                        
+                    </p>
+                </section>
+
+                <section class="section-rendu-web">
+                    <p>
+                        <span class="exemple">Rendu Web:</span>
+        
+                        <table class="table-partie9" >
+                            <caption>Tableau de sport</caption>
+                            <tr>
+                                <th>Jour</th>
+                                <th>Exercise</th>
+                                <th>Temps</th>
+                            </tr>
+                            <tr>
+                                <td class="td-modification2">lundi</td>
+                                <td class="td-modification2">abdos</td>
+                                <td class="td-modification2">20min x2</td>
+                            </tr>
+                            <tr>
+                                <td class="td-modification2">mardi</td>
+                                <td class="td-modification2">gainage</td>
+                                <td class="td-modification2">30min x2</td>
+                            </tr>
+                            <tr>
+                                <td class="td-modification2">mercredi</td>
+                                <td class="td-modification2">pompes</td>
+                                <td class="td-modification2">30min x2</td>
+                            </tr>
+                        </table>
+                        Et voila, sachez que si vous voulez centrer le tableau, ça se passe dans l'attribut
+                        table.
+                    </p>
+                </section> 
+                
+                <section class="section-exemple">
+                    <p>
+                        <span class="numérotation">10.</span>
+                        Donc pour centrer notre tableau, il faut rajouter dans l'attribut table, 
+                        la propriété margin, suivi de la valeur auto.<br>
+                        
+                        <span class="exemple">Exemple en image:</span>
+                        <img src="../css/images_css/img_css_partie10.PNG">
+                    </p>
+                </section>
+
+                <section class="section-rendu-web">
+                    <p>
+                        <span class="exemple">Rendu Web:</span>
+                        <table class="table-partie10">
+                            <caption>Tableau de sport</caption>
+                                <tr>
+                                    <th>Jour</th>
+                                    <th>Exercice</th>
+                                    <th>Temps</th>
+                                </tr>
+                                <tr>
+                                    <td class="td-modification2">lundi</td>
+                                    <td class="td-modification2">abdos</td>
+                                    <td class="td-modification2">20min x2</td>
+                                </tr>
+                                <tr>
+                                    <td class="td-modification2">mardi</td>
+                                    <td class="td-modification2">gainage</td>
+                                    <td class="td-modification2">30min x2</td>
+                                </tr>
+                                <tr>
+                                    <td class="td-modification2">mercredi</td>
+                                    <td class="td-modification2">pompes</td>
+                                    <td class="td-modification2">30min x2</td>
+                                </tr>
+                        </table>
+                    </p>
+                </section> 
+
+                <section class="section-exemple">
+                    <p>
+                    <span class="numérotation">11.</span>
+                    
+                        Nous avons pratiquement le même tableau que celui de la présentation au début du site.
+                        Il ne reste plus qu'a rajouter les couleurs sur la case abdos et 
+                        sur la ligne qui commence par mardi. 
+                    </p>
+                    <p>
+                        Comme pour le reste, rien de bien compliquer. Pour modifier un case en particulier, 
+                        il faut lui donner une class spécifique.<br>
+                        
+                        <span class="exemple">Exemple en image:</span>
+                        <img src="./images_html/img_html_partie11.PNG">
+                    <p>
+                        Maintenant que l'on as créé une class a la propriété &lt;td&gt;, il reste plus qu'a
+                        lui donné une couleur dans la partie css.
+
+                        <span class="exemple">Exemple en image:</span>
+                        <img src="../css/images_css/img_css_partie11.PNG">
+                    </p>
+                </section>
+
+                <section class="section-rendu-web">                    
+                    <p>
+                        <span class="exemple">Rendu Web:</span>
+                        <table class="table-partie1-et-12" >
+                            <caption>Tableau de sport</caption>
+                            <tr>
+                                <th>Jour</th>
+                                <th>Exercice</th>
+                                <th>Temp</th>
+                            </tr>
+                            <tr>
+                            <td class="td-modification2">lundi</td>
+                            <td class="td-modification3">abdos</td>
+                            <td class="td-modification2">20min x2</td>
+                            </tr>
+                            <tr>
+                            <td class="td-modification2">mardi</td>
+                            <td class="td-modification2">gainage</td>
+                            <td class="td-modification2">30min x2</td>
+                            </tr>
+                            <tr>
+                                <td class="td-modification2">mercredi</td>
+                                <td class="td-modification2">pompes</td>
+                                <td class="td-modification2">20min x2</td>
+                            </tr>
+                        </table>
+                    </p>
+                </section>
+
+                <section class="section-exemple">
+                    <p>
+                    <span class="numérotation">12.</span>
+                        On sait modifier la couleur d'une case en particulier, mais comment fait-on pour modifier
+                        une ligne complette.Il faut juste répéter la même opération mais cette fois si, ces sur la balise
+                        &lt;tr&gt; que nous allons créé une class.<br>
+
+                        <span class="exemple">Exemple en image:</span>
+                        <img src="./images_html/img_html_partie12.PNG">
+
+                        Maintenant que l'on as créé une class a la propriété &lt;tr&gt;, il reste plus qu'a
+                        lui donné une couleur dans la partie css..<br>
+
+                        <span class="exemple">Exemple en image:</span>
+                        <img src="../css/images_css/img_css_partie12.PNG">
+                    </p>
+                </section>
+
+                <section class="section-rendu-web">                    
+                    <p>
+                        <span class="exemple">Rendu Web:</span>
+                        <table class="table-partie1-et-12" >
+                            <caption>Tableau de sport</caption>
+                            <tr>
+                                <th>Jour</th>
+                                <th>Exercice</th>
+                                <th>Temp</th>
+                            </tr>
+                            <tr>
+                            <td class="td-modification2">lundi</td>
+                            <td class="td-modification3">abdos</td>
+                            <td class="td-modification2">20min x2</td>
+                            </tr>
+                            <tr class="tr-modification1">
+                            <td class="td-modification2">mardi</td>
+                            <td class="td-modification2">gainage</td>
+                            <td class="td-modification2">30min x2</td>
+                            </tr>
+                            <tr>
+                                <td class="td-modification2">mercredi</td>
+                                <td class="td-modification2">pompes</td>
+                                <td class="td-modification2">20min x2</td>
+                            </tr>
+                        </table>
+                    </p>
+                </section>
+
+                <section class="section-exemple">
+                    <h2>Conclusion:</h2>
+                        <p>                     
+                            C'est tous, pour la création d'un tableau; enfin...presque!<br>
+                            Nous avons appris la création d'un tableau simple, il est largement suffisant,
+                            mais si vous voulez créé un tableau plus élaborer, alors
+                            il va faloir apprendre a créé un tableau plus complexe.<br>
+                            Si ça vous intéresse, rdv a la page suivante.
+                        </p>
+                </section> 
+                        <a class="bouton" href="page2" target="_blank">Apprendre a créé un tableau complexe</a>     
+            </main>
+    <footer>
+        VELLA ASSISTANCE INFORMATIQUE<br>
+
+        <p><a href="#">Qui sommes-nous ?</a></p>
+        <p><a href="">Formation</a></p>
+        <p><a href="">Assistance</a></p>
+        <p><a href="">Contact</a></p>
+        
+    </footer>        
+</body>
+</html>
